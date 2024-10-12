@@ -12,7 +12,7 @@ public class CreateTransactionRequest : Request {
     public ETransactionType Type {get; set;} = ETransactionType.Withdraw;
 
     [Required(ErrorMessage = "Valor Inválido!")]
-    public decimal Amonut {get; set;}
+    public decimal Amount {get; set;}
 
     [Required(ErrorMessage = "Categoria Inválida!")]
     public long CategoryId {get; set;}
